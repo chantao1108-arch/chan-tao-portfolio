@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CaseStudySection } from "@/src/components/CaseStudySection";
+import { LiftMockups } from "@/src/components/LiftMockups";
 import { SiteFooter } from "@/src/components/SiteFooter";
 import { SiteHeader } from "@/src/components/SiteHeader";
 import { projects } from "@/src/data/projects";
@@ -140,16 +141,7 @@ export default function LiftPage() {
             </ul>
           </CaseStudySection>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10">
-            <p className="text-sm uppercase tracking-[0.35em] text-slate-600">Prototype placeholders</p>
-            <div className="mt-6 grid gap-6 sm:grid-cols-2">
-              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Elevator interface</div>
-              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Resident board</div>
-              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Hallway interaction</div>
-              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Floor rule system</div>
-              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Player-state progression</div>
-            </div>
-          </div>
+          <LiftMockups />
 
           <CaseStudySection title="Skills demonstrated">
             <div className="grid gap-3 sm:grid-cols-2">
