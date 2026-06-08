@@ -130,36 +130,36 @@ export const projects: Project[] = [
   {
     slug: "product-analytics",
     title: "Product Analytics Case Study",
-    label: "Product Analytics Case Study",
+    label: "Activation & Retention",
     description:
-      "A data analysis case study exploring activation, retention, and conversion for an AI design tool.",
-    tags: ["SQL", "Product Analytics", "Funnel Analysis", "Retention"],
+      "A simulated product analytics case study exploring activation, retention, and conversion for an AI design education tool.",
+    tags: ["Product Analytics", "Funnel Analysis", "Retention", "SQL"],
     overview:
-      "This case study examines product metrics for an AI design tool, focusing on activation, retention, and conversion insights.",
+      "This case study uses a simulated dataset for an AI design education product similar to SiteAtlas. The goal is to demonstrate how product analytics can translate user behavior into product decisions.",
     problem:
-      "Product teams need clear data signals to understand where users drop off and how AI features impact long-term retention.",
+      "AI tools can generate outputs, but not every output creates user value. Product teams need to know where users drop off and which behaviors predict retention. For an AI design education tool, the key question is whether users reach a board-ready structure. The challenge was to define meaningful activation and retention signals for a new product concept.",
     targetUsers:
-      "Product analysts, UX researchers, and AI product leaders looking for actionable analytics storytelling.",
+      "Product analysts, UX researchers, product managers, and designers interested in analytics-driven product decisions.",
     role:
-      "Analytic strategy, funnel definition, metric synthesis, and product recommendation development.",
+      "Analytic strategy, funnel definition, simulated data design, SQL query examples, metric synthesis, and product recommendation writing.",
     tools: ["SQL", "Looker", "Figma", "Notion", "Excel"],
     process: [
-      "Defined key activation and retention cohorts based on product behavior.",
-      "Analyzed funnel drop-off and feature usage patterns.",
-      "Translated data into prioritized product recommendations.",
+      "Defined a hypothetical funnel and key activation signals.",
+      "Created a simulated dataset to demonstrate analysis workflows.",
+      "Produced prioritized product recommendations based on simulated insights.",
     ],
     decisions: [
-      "Focused on activation and retention rather than vanity metrics.",
-      "Broke analysis into user behavior, feature adoption, and conversion triggers.",
-      "Supplemented numeric insight with qualitative product recommendations.",
+      "Define clear activation and retention events early in the product lifecycle.",
+      "Focus analysis on behaviors that lead to board-ready outputs rather than generation volume.",
+      "Use exports and saved boards as stronger value signals than generation alone.",
     ],
     outcome:
-      "Delivered a concise analytics story that surfaced high-leverage improvements for onboarding and AI feature usage.",
+      "A clear, reproducible analytics narrative demonstrating how teams can measure and act on activation and retention signals for an AI design education product.",
     nextSteps:
-      "Run targeted experiments on onboarding prompts, retention nudges, and conversion messaging.",
-    heroTagline: "Data-driven product insight for an AI design experience.",
+      "Build a real event-tracking plan, implement the analytics events, create dashboards, and run onboarding experiments.",
+    heroTagline: "Activation and retention analysis for an AI design learning experience.",
     heroSummary:
-      "A product analytics case study focused on how activation, retention, and conversion move together for an AI design tool.",
+      "A simulated analytics case study showing how funnel, retention, and conversion metrics inform product decisions for an AI design tool.",
     path: "/work/product-analytics",
   },
 ];
