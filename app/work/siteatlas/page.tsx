@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CaseStudySection } from "@/src/components/CaseStudySection";
+import { SiteAtlasMockups } from "@/src/components/SiteAtlasMockups";
 import { SiteFooter } from "@/src/components/SiteFooter";
 import { SiteHeader } from "@/src/components/SiteHeader";
 import { projects } from "@/src/data/projects";
@@ -42,14 +43,6 @@ const uxSteps = [
   "User reviews precedents and visual directions",
   "User organizes findings into board sections",
   "User exports or continues refining the presentation logic",
-];
-
-const placeholderCards = [
-  "Input form",
-  "AI analysis output",
-  "Precedent cards",
-  "Board Builder",
-  "Export Center",
 ];
 
 export const metadata: Metadata = {
@@ -147,16 +140,7 @@ export default function SiteAtlasPage() {
             </ul>
           </CaseStudySection>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10">
-            <p className="text-sm uppercase tracking-[0.35em] text-slate-600">Prototype placeholders</p>
-            <div className="mt-6 grid gap-6 sm:grid-cols-2">
-              {placeholderCards.map((label) => (
-                <div key={label} className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">
-                  {label}
-                </div>
-              ))}
-            </div>
-          </div>
+          <SiteAtlasMockups />
 
           <CaseStudySection title="Product thinking">
             <p className="text-slate-700">
