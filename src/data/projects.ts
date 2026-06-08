@@ -60,34 +60,35 @@ export const projects: Project[] = [
     title: "LIFT",
     label: "Narrative Horror Game Prototype",
     description:
-      "A mobile narrative horror game prototype built around modular elevator floors, interactive rules, and player-state progression.",
-    tags: ["Game UX", "Unity", "Narrative Systems", "Mobile Prototype"],
+      "A mobile narrative horror game prototype built around modular elevator floors, interactive rules, surreal spatial logic, and player-state progression.",
+    tags: ["Game UX", "Narrative Systems", "Mobile Prototype", "Unity"],
     overview:
-      "LIFT is a prototype that explores story-driven gameplay through a stacked elevator world, layered rules, and stateful character choices.",
+      "LIFT is an independent mobile prototype exploring how horror emerges from rules, repetition, spatial uncertainty, and player interpretation rather than only jump scares.",
     problem:
-      "Horror game prototypes can struggle to balance atmosphere, player guidance, and emergent narrative systems in a compact mobile form.",
+      "Many mobile horror games rely on jump scares or passive observation. Narrative games can become overly text-heavy if interaction is not carefully designed. The challenge was to create a compact game structure where each floor functions as a self-contained surreal puzzle but also contributes to a larger progression system, and to make this feasible for a solo creator while remaining expandable.",
     targetUsers:
-      "Mobile narrative game players, game designers, and storytellers interested in systems-driven horror experiences.",
+      "Players interested in surreal horror, narrative puzzle game players, mobile horror audiences, and players who enjoy liminal spaces, analog horror, and rule-based mysteries.",
     role:
-      "Game UX design, systems planning, narrative architecture, prototype iteration, and user experience flows.",
+      "Game concept, narrative system design, level structure, player-state progression, UX flow, interaction logic, prototype planning, and Unity implementation direction.",
     tools: ["Unity", "Figma", "Miro", "Prototyping", "Playtesting"],
     process: [
-      "Defined elevator floor modules and interactive rule sets for narrative escalation.",
-      "Designed player-state progression to create meaningful choices across scenes.",
-      "Refined pacing through playtesting and rule clarity checks.",
+      "Defined a minimal set of interaction rules per floor to support emergent discovery.",
+      "Designed a four-state player recognition system to drive emotional progression.",
+      "Built modular level templates to allow scalable content creation.",
     ],
     decisions: [
-      "Focused on modular floor design to enable replayability and emergent dread.",
-      "Kept interactions clear and minimal to preserve pacing on mobile.",
-      "Used stateful progression to make each choice feel consequential.",
+      "Elevator as the main navigation and interaction surface to centralize player focus.",
+      "Encourage rule discovery rather than heavy tutorials to preserve tension.",
+      "Use modular floor design so new content can be authored quickly.",
+      "Make player-state progression the primary emotional feedback loop.",
     ],
     outcome:
-      "Delivered a compact prototype with a strong narrative spine, clear game rules, and a believable progression structure.",
+      "Produced a focused prototype demonstrating meaningful player-driven discovery, concise interaction rules, and a scaffold for further chapter development.",
     nextSteps:
-      "Expand floor variations, add audio drama cues, and test deeper player-state branching.",
-    heroTagline: "A compact narrative horror experience in a haunted elevator.",
+      "Refine onboarding for Floor 01, develop contrasting Floor 02, add player-state UI, incorporate audio and environmental storytelling, and prepare a vertical slice.",
+    heroTagline: "A rule-driven, atmospheric narrative horror prototype.",
     heroSummary:
-      "A mobile prototype that blends atmosphere, choice-driven progression, and modular game rules around a single elevator environment.",
+      "A mobile prototype where each elevator floor is a compact, rule-based narrative chamber that contributes to a larger, stateful progression.",
     path: "/work/lift",
   },
   {
