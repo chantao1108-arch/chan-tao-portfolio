@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CaseStudySection } from "@/src/components/CaseStudySection";
+import { ProductAnalyticsMockups } from "@/src/components/ProductAnalyticsMockups";
 import { SiteFooter } from "@/src/components/SiteFooter";
 import { SiteHeader } from "@/src/components/SiteHeader";
 import { projects } from "@/src/data/projects";
@@ -114,6 +115,8 @@ export default function ProductAnalyticsPage() {
               ))}
             </ul>
           </CaseStudySection>
+
+          <ProductAnalyticsMockups />
 
           <CaseStudySection title="Analysis questions">
             <ul className="list-disc space-y-2 pl-5 text-slate-700">
