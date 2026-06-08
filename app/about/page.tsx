@@ -31,30 +31,44 @@ export default function AboutPage() {
             </div>
             <div className="space-y-8 text-slate-700">
               <p>
-                I am an AI product and UX analyst with a background in landscape architecture. I care deeply about how visual storytelling, systems thinking, and product analytics can come together to make AI experiences feel clear, useful, and memorable.
+                I am an AI Product & UX Analyst with a background in landscape architecture and design thinking. I combine spatial reasoning, visual storytelling, and systems thinking to make AI experiences that are clear, usable, and teachable.
               </p>
               <p>
-                My practice includes AI-assisted product development, interactive system design, and editorial presentation. I build workflows that turn research into prototypes, narrative experiences, and measurable product decisions.
+                I build independent prototypes and workflows — including projects like SiteAtlas and LIFT — that help learners and creators move from ambiguous prompts to structured outputs and presentation-ready artifacts.
               </p>
               <p>
-                I look for work that balances practical product outcomes with thoughtful UX — projects that are strategic, elegant, and designed to scale beyond the initial prototype.
+                My strength is turning abstract ideas into systems, flows, and product concepts that teams can test and iterate on. I focus on early-stage product work: prototyping, UX research, and analytics-informed design.
               </p>
             </div>
           </div>
           <aside className="rounded-[2rem] border border-slate-300/70 bg-white p-8 shadow-sm">
-            <p className="text-sm uppercase tracking-[0.3em] text-slate-600">Capabilities</p>
-            <div className="mt-6 space-y-6 text-slate-700">
-              <p>
-                My strengths combine AI product thinking, landscape design sensibility, and analytics-led UX — so I can communicate ideas clearly and move quickly from concept to product-ready detail.
-              </p>
-              <SkillsGrid skills={[
-                "AI product strategy",
-                "Landscape architecture thinking",
-                "UX systems",
-                "Content workflows",
-                "Data storytelling",
-                "Interactive prototypes",
-              ]} />
+            <p className="text-sm uppercase tracking-[0.3em] text-slate-600">Role fit</p>
+            <div className="mt-4 space-y-4 text-slate-700">
+              <ul className="list-disc pl-5">
+                <li>AI Product Analyst</li>
+                <li>Technical Business Analyst</li>
+                <li>UX / Product Designer</li>
+                <li>Product Operations Analyst</li>
+                <li>AI Workflow Designer</li>
+                <li>Content Systems Designer</li>
+              </ul>
+            </div>
+            <div className="mt-6">
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-600">Tools &amp; skills</p>
+              <div className="mt-4">
+                <SkillsGrid skills={[
+                  "Product strategy",
+                  "UX flows",
+                  "Figma / interface planning",
+                  "Next.js / Vercel prototyping",
+                  "OpenAI API concepts",
+                  "SQL basics",
+                  "Product analytics",
+                  "Unity prototype planning",
+                  "AI content workflows",
+                  "English product writing",
+                ]} />
+              </div>
             </div>
           </aside>
         </section>

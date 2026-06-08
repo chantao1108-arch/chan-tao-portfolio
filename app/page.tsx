@@ -31,10 +31,10 @@ export default function Home() {
             <div className="space-y-6">
               <p className="text-sm uppercase tracking-[0.35em] text-slate-600">AI Product & UX Analyst</p>
               <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">
-                I build AI-powered product prototypes, UX flows, and content systems using AI tools, web technologies, and product analytics.
+                I design AI-powered product prototypes, UX flows, and content systems — then use product thinking and analytics to turn ambiguous ideas into structured, buildable experiences.
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-slate-700">
-                My work sits at the intersection of product strategy, editorial design, and AI-assisted systems. I help teams turn ideas into products, prototypes, and stories that feel grounded, strategic, and ready to build.
+                My work sits at the intersection of product strategy, UX systems, AI-assisted workflows, and visual storytelling. I focus on early-stage product ideas, independent prototypes, and tools that need clearer structure before they can scale.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
@@ -64,14 +64,48 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="mt-12 grid gap-10 lg:grid-cols-3">
+          <div className="lg:col-span-2 space-y-6">
+            <h3 className="text-sm uppercase tracking-[0.3em] text-slate-600">What I do</h3>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+                <h4 className="text-lg font-semibold text-slate-950">AI Product Prototyping</h4>
+                <p className="mt-2 text-slate-700">Turning vague product ideas into structured flows, feature systems, and testable prototypes.</p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+                <h4 className="text-lg font-semibold text-slate-950">UX &amp; Information Architecture</h4>
+                <p className="mt-2 text-slate-700">Designing user journeys, onboarding logic, interface structures, and decision flows.</p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+                <h4 className="text-lg font-semibold text-slate-950">AI Workflow Systems</h4>
+                <p className="mt-2 text-slate-700">Building repeatable pipelines for content, research, design education, and creative production.</p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+                <h4 className="text-lg font-semibold text-slate-950">Product Analytics Thinking</h4>
+                <p className="mt-2 text-slate-700">Defining activation, retention, funnel events, and product signals for early-stage tools.</p>
+              </div>
+            </div>
+          </div>
+          <aside className="rounded-2xl border border-slate-200 bg-white p-6">
+            <h4 className="text-sm uppercase tracking-[0.28em] text-slate-600">Currently focused on</h4>
+            <ul className="mt-4 space-y-2 text-slate-700">
+              <li>AI product strategy</li>
+              <li>UX case studies</li>
+              <li>Product analytics</li>
+              <li>Interactive narrative systems</li>
+              <li>AI-assisted content workflows</li>
+            </ul>
+          </aside>
+        </section>
+
         <section className="mt-20 space-y-8">
           <div className="flex items-center justify-between gap-4">
             <div>
               <p className="text-sm uppercase tracking-[0.3em] text-slate-600">Work</p>
-              <h2 className="mt-4 text-3xl font-semibold text-slate-950">Recent case studies and prototypes.</h2>
+              <h2 className="mt-4 text-3xl font-semibold text-slate-950">Selected case studies and prototypes</h2>
             </div>
             <p className="max-w-xl text-sm leading-7 text-slate-700">
-              Selected projects that explore AI-first product experiences, narrative systems, editorial design, and measurement frameworks.
+              These projects explore how AI, interaction design, narrative systems, and analytics can turn complex ideas into usable product experiences.
             </p>
           </div>
           <div className="grid gap-8 xl:grid-cols-2">
