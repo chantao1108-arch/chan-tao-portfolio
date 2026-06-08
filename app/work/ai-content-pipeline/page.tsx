@@ -7,6 +7,39 @@ import { projects } from "@/src/data/projects";
 
 const project = projects.find((item) => item.slug === "ai-content-pipeline");
 
+const workflowSteps = [
+  "Concept seed",
+  "Hook and title direction",
+  "Short script",
+  "Shot list",
+  "Visual prompt set",
+  "Image generation",
+  "Video generation",
+  "Editing checklist",
+  "Thumbnail/title testing",
+  "Performance review",
+];
+
+const horrorRules = [
+  "Start with a simple unsettling premise",
+  "Keep the hook visible in the first few seconds",
+  "Use visual continuity across generated images",
+  "Design sound and silence as part of pacing",
+  "Avoid over-explaining the horror",
+  "Track which concepts generate stronger retention signals",
+];
+
+const exampleWorkflow = [
+  "Idea: a person finds a video file that should not exist",
+  "3 hook options",
+  "1 short script",
+  "6–8 shot beats",
+  "Visual prompt directions",
+  "Editing checklist",
+  "Title/thumbnail options",
+  "Post-publishing review questions",
+];
+
 export const metadata: Metadata = {
   title: "AI Content Pipeline — Horror Video Workflow",
   description: project?.heroSummary ?? "",
@@ -30,7 +63,7 @@ export default function AIContentPipelinePage() {
         <section className="space-y-6 rounded-[2rem] border border-slate-300/75 bg-white p-10 shadow-sm">
           <p className="text-sm uppercase tracking-[0.35em] text-slate-600">{project.label}</p>
           <h1 className="text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">{project.title}</h1>
-          <p className="max-w-3xl text-lg leading-8 text-slate-700">{project.heroSummary}</p>
+          <p className="max-w-3xl text-lg leading-8 text-slate-700">{project.description}</p>
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="space-y-5 text-slate-700">
               <p>{project.overview}</p>
@@ -38,7 +71,9 @@ export default function AIContentPipelinePage() {
             <div className="space-y-4 rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div>
                 <p className="text-sm uppercase tracking-[0.32em] text-slate-600">Role</p>
-                <p className="mt-2 text-slate-950">{project.role}</p>
+                <div className="mt-2 space-y-2 text-slate-950">
+                  {project.role}
+                </div>
               </div>
               <div>
                 <p className="text-sm uppercase tracking-[0.32em] text-slate-600">Tools</p>
@@ -55,35 +90,107 @@ export default function AIContentPipelinePage() {
         </section>
 
         <section className="grid gap-16 py-16">
+          <CaseStudySection title="Project overview">
+            <p className="text-slate-700">{project.overview}</p>
+          </CaseStudySection>
+
           <CaseStudySection title="Problem">
-            <p>{project.problem}</p>
+            <ul className="list-disc space-y-4 pl-5 text-slate-700">
+              <li>Short-form horror needs strong hooks, tight pacing, and visual clarity to be effective.</li>
+              <li>AI tools can produce assets quickly, but outputs vary without a structured process.</li>
+              <li>Solo creators often lose time switching between ideation, scripting, generation, editing, and publishing.</li>
+              <li>The challenge was to design a repeatable pipeline that keeps creative control while improving speed.</li>
+            </ul>
           </CaseStudySection>
+
           <CaseStudySection title="Target users">
-            <p>{project.targetUsers}</p>
-          </CaseStudySection>
-          <CaseStudySection title="Process">
             <ul className="list-disc space-y-3 pl-5 text-slate-700">
-              {project.process.map((step) => (
-                <li key={step}>{step}</li>
+              <li>Solo content creators</li>
+              <li>Horror YouTube/TikTok creators</li>
+              <li>AI video creators</li>
+              <li>Small creative teams</li>
+              <li>Storytelling-focused content operators</li>
+              <li>Creators testing short-form video concepts</li>
+            </ul>
+          </CaseStudySection>
+
+          <CaseStudySection title="Workflow structure">
+            <div className="space-y-3 text-slate-700">
+              {workflowSteps.map((s) => (
+                <p key={s}>• {s}</p>
+              ))}
+            </div>
+          </CaseStudySection>
+
+          <CaseStudySection title="Core system">
+            <p className="text-slate-700">The objective is not to let AI randomly generate a final video. Instead, the pipeline defines clear inputs, outputs, and quality checks at each stage so human direction remains central and predictable outcomes are achievable.</p>
+          </CaseStudySection>
+
+          <CaseStudySection title="Horror-specific design rules">
+            <ul className="list-disc space-y-2 pl-5 text-slate-700">
+              {horrorRules.map((r) => (
+                <li key={r}>{r}</li>
               ))}
             </ul>
           </CaseStudySection>
-          <CaseStudySection title="Key product decisions">
-            <ul className="list-disc space-y-3 pl-5 text-slate-700">
-              {project.decisions.map((decision) => (
-                <li key={decision}>{decision}</li>
+
+          <CaseStudySection title="Example workflow">
+            <ul className="list-disc space-y-2 pl-5 text-slate-700">
+              {exampleWorkflow.map((w) => (
+                <li key={w}>{w}</li>
               ))}
             </ul>
           </CaseStudySection>
+
+          <CaseStudySection title="Key product / UX decisions">
+            <ul className="list-disc space-y-3 pl-5 text-slate-700">
+              <li>Design the workflow before choosing tools to avoid tool-driven outcomes.</li>
+              <li>Maintain human editorial direction to preserve narrative intent over AI randomness.</li>
+              <li>Standardize prompt structures to enable repeatable visuals and faster iteration.</li>
+              <li>Include performance review as a formal part of the creative loop to improve future outputs.</li>
+            </ul>
+          </CaseStudySection>
+
           <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10">
-            <p className="text-sm uppercase tracking-[0.35em] text-slate-600">Prototype / screens</p>
-            <div className="mt-6 h-72 rounded-[1.75rem] border border-dashed border-slate-300 bg-white" />
+            <p className="text-sm uppercase tracking-[0.35em] text-slate-600">Prototype placeholders</p>
+            <div className="mt-6 grid gap-6 sm:grid-cols-2">
+              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Concept input</div>
+              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Script output</div>
+              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Shot list</div>
+              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Prompt board</div>
+              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Editing checklist</div>
+              <div className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">Analytics review</div>
+            </div>
           </div>
-          <CaseStudySection title="Outcome / what I learned">
-            <p>{project.outcome}</p>
+
+          <CaseStudySection title="Skills demonstrated">
+            <div className="grid gap-3 sm:grid-cols-2">
+              {[
+                "AI workflow design",
+                "Content operations",
+                "Prompt systems",
+                "Visual storytelling",
+                "Short-form video strategy",
+                "Horror pacing",
+                "Creative process design",
+                "Productized content thinking",
+              ].map((skill) => (
+                <div key={skill} className="rounded-3xl border border-slate-200 bg-white px-5 py-4 text-slate-700">
+                  {skill}
+                </div>
+              ))}
+            </div>
           </CaseStudySection>
+
           <CaseStudySection title="Next steps">
-            <p>{project.nextSteps}</p>
+            <ul className="list-disc space-y-3 pl-5 text-slate-700">
+              <li>Build a simple web interface for the pipeline</li>
+              <li>Add reusable prompt templates</li>
+              <li>Add thumbnail/title testing tracker</li>
+              <li>Create a content calendar view</li>
+              <li>Add analytics fields for retention, click-through rate, and completion rate</li>
+              <li>Test the workflow across multiple horror formats</li>
+            </ul>
           </CaseStudySection>
         </section>
       </main>

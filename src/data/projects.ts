@@ -96,34 +96,35 @@ export const projects: Project[] = [
     title: "AI Content Pipeline",
     label: "Horror Video Workflow",
     description:
-      "An AI-assisted workflow for producing short-form horror videos from concept to script, storyboard, visual prompts, video generation, editing, and performance testing.",
-    tags: ["AI Workflow", "Content Systems", "Storytelling", "Video Production"],
+      "An AI-assisted content production workflow that turns a short horror concept into a repeatable pipeline for scriptwriting, shot planning, visual prompting, video generation, editing, and performance review.",
+    tags: ["AI Workflow", "Content Systems", "Visual Storytelling", "Video Production"],
     overview:
-      "The content pipeline maps the end-to-end process of turning an idea into a shareable horror video with AI-enabled tools at every stage.",
+      "This independent workflow explores how AI tools can help solo creators produce short-form horror videos more consistently without losing narrative control or visual direction.",
     problem:
-      "Creating cohesive short-form video with strong storytelling is time consuming without a structured workflow that connects idea, visuals, and iteration.",
+      "Short-form horror content requires strong hooks, pacing, and visual clarity. AI tools can generate assets quickly, but outputs are inconsistent without a clear workflow. Solo creators spend time switching between ideation, scripting, image prompts, video generation, editing, and publishing. The challenge was to design a repeatable content pipeline that preserves creative control while improving production speed.",
     targetUsers:
-      "Video creators, content teams, and storytellers who need a repeatable AI-first production process.",
+      "Solo content creators, horror YouTube/TikTok creators, AI video creators, small creative teams, storytelling-focused content operators, and creators testing short-form video concepts.",
     role:
-      "Workflow design, content strategy, systems thinking, AI prompt sequencing, and performance testing analysis.",
+      "Workflow design, story structure, prompt system design, visual direction, AI tool orchestration, content operations planning, performance review framework, and case study writing.",
     tools: ["Notion", "ChatGPT", "Midjourney", "Runway", "Figma"],
     process: [
-      "Mapped creative stages from concept to scripting, storyboarding, asset generation, and editing.",
-      "Built a repeatable AI prompt sequence for visual and narrative consistency.",
-      "Validated the process with short-form tests and iteration feedback.",
+      "Defined a clear handoff between ideation, scripting, assets, generation, and editing.",
+      "Built repeatable prompt templates for visual consistency across generated images and video frames.",
+      "Established an editing checklist and post-publish performance review routine.",
     ],
     decisions: [
-      "Organized deliverables as a linear pipeline to reduce handoff friction.",
-      "Embraced generative AI for storyboard and visual idea exploration.",
-      "Connected performance testing to creative iteration rather than output alone.",
+      "Designed the workflow before integrating tooling to prevent tool-driven outcomes.",
+      "Prioritized human editorial direction over AI randomness.",
+      "Created a repeatable prompt and content checklist to improve consistency.",
+      "Integrated performance review into the creative loop for iterative improvement.",
     ],
     outcome:
-      "Established a content workflow that transmits a horror concept into visual and narrative artifacts efficiently.",
+      "Delivered an independent workflow prototype that demonstrates how AI tools can be orchestrated into a controlled, repeatable content production process for short-form horror.",
     nextSteps:
-      "Integrate analytics into ideation, refine asset handoff, and test the pipeline with a live creator team.",
-    heroTagline: "From concept to horror video through an AI-assisted production workflow.",
+      "Build a simple web interface for the pipeline, add reusable prompt templates, enable thumbnail/title testing, create a content calendar, and track analytics for retention and completion.",
+    heroTagline: "From concept to horror video through a repeatable AI-assisted pipeline.",
     heroSummary:
-      "A workflow designed to create short-form horror content with generative narrative, visuals, editing, and iteration baked in.",
+      "A production system that converts a short horror idea into scripts, shot lists, visual prompts, generated assets, and an editing checklist ready for testing and iteration.",
     path: "/work/ai-content-pipeline",
   },
   {
