@@ -1,65 +1,87 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import { ProjectCard } from "@/src/components/ProjectCard";
+import { SiteFooter } from "@/src/components/SiteFooter";
+import { SiteHeader } from "@/src/components/SiteHeader";
+import { SkillsGrid } from "@/src/components/SkillsGrid";
+import { projects } from "@/src/data/projects";
+
+export const metadata: Metadata = {
+  title: "Chan Tao — AI Product & UX Analyst",
+  description:
+    "I build AI-powered product prototypes, UX flows, and content systems using AI tools, web technologies, and product analytics.",
+  openGraph: {
+    title: "Chan Tao — AI Product & UX Analyst",
+    description:
+      "AI product and UX analyst portfolio for editorial design systems, AI workflows, and product case studies.",
+    type: "website",
+    url: "https://chan-tao-portfolio.vercel.app",
+    siteName: "Chan Tao Portfolio",
+  },
+};
+
+const featuredProjects = projects.slice(0, 4);
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="min-h-screen bg-[#f8f3ec] text-slate-950">
+      <SiteHeader />
+      <main className="mx-auto max-w-7xl px-6 pb-20 pt-10 lg:px-8">
+        <section className="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_320px] lg:items-start">
+          <div className="space-y-10">
+            <div className="space-y-6">
+              <p className="text-sm uppercase tracking-[0.35em] text-slate-600">AI Product & UX Analyst</p>
+              <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">
+                I build AI-powered product prototypes, UX flows, and content systems using AI tools, web technologies, and product analytics.
+              </h1>
+              <p className="max-w-2xl text-lg leading-8 text-slate-700">
+                My work sits at the intersection of product strategy, editorial design, and AI-assisted systems. I help teams turn ideas into products, prototypes, and stories that feel grounded, strategic, and ready to build.
+              </p>
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div className="rounded-4xl border border-slate-300/70 bg-white p-6">
+                <p className="text-sm uppercase tracking-[0.28em] text-slate-600">Featured work</p>
+                <p className="mt-4 text-2xl font-semibold text-slate-950">AI product design, narrative systems, and analytics-driven strategy.</p>
+              </div>
+              <div className="rounded-4xl border border-slate-300/70 bg-white p-6">
+                <p className="text-sm uppercase tracking-[0.28em] text-slate-600">Contact</p>
+                <p className="mt-4 text-2xl font-semibold text-slate-950">chantao1108@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div className="rounded-[2rem] border border-slate-200/80 bg-white p-8 shadow-sm">
+            <p className="text-sm uppercase tracking-[0.3em] text-slate-600">Skills</p>
+            <div className="mt-6 space-y-4 text-slate-700">
+              <p>Product analytics, AI workflows, UX systems, landscape design thinking, and editorial product storytelling.</p>
+              <SkillsGrid skills={[
+                "AI product strategy",
+                "UX research",
+                "Content workflows",
+                "Design systems",
+                "Prototyping",
+                "Analytics storytelling",
+              ]} />
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-20 space-y-8">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-600">Work</p>
+              <h2 className="mt-4 text-3xl font-semibold text-slate-950">Recent case studies and prototypes.</h2>
+            </div>
+            <p className="max-w-xl text-sm leading-7 text-slate-700">
+              Selected projects that explore AI-first product experiences, narrative systems, editorial design, and measurement frameworks.
+            </p>
+          </div>
+          <div className="grid gap-8 xl:grid-cols-2">
+            {featuredProjects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
+        </section>
       </main>
+      <SiteFooter />
     </div>
   );
 }
