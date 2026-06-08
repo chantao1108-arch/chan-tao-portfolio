@@ -23,6 +23,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </span>
             ))}
           </div>
+          <div className="mt-6 text-sm font-semibold text-slate-900">View case study →</div>
         </div>
       </Link>
     </article>
