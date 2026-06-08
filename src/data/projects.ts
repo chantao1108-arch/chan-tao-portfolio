@@ -24,34 +24,35 @@ export const projects: Project[] = [
     title: "SiteAtlas",
     label: "AI Design Education Tool",
     description:
-      "An AI-powered design education platform that helps landscape architecture students generate site analysis frameworks, precedent references, visual directions, and presentation boards.",
+      "An AI-powered design education platform that helps landscape architecture and design students turn a site, project type, and design direction into structured analysis, precedent references, visual guidance, and presentation logic.",
     tags: ["AI Product", "UX Design", "Web Prototype", "OpenAI API", "Design Education"],
     overview:
-      "SiteAtlas is an experimental design education tool that combines AI analysis, precedent curation, and visual guidance to help students shape site strategy and presentation assets.",
+      "SiteAtlas was created to solve a common problem in design education: students often know the site and assignment, but do not know how to start site analysis, organize research, select precedents, or translate observations into a coherent board.",
     problem:
-      "Landscape design students often need faster ways to connect research insights to compelling visual frameworks, precedent references, and presentation-ready diagrams.",
+      "Site analysis is often ambiguous for beginner design students. Students depend heavily on expensive tutoring, scattered references, and vague online inspiration. Existing AI tools can generate text, but they usually do not understand the design process or studio critique logic. The challenge was to create a product flow that turns a vague design starting point into actionable design thinking.",
     targetUsers:
-      "Landscape architecture students, design instructors, and early-stage design teams who need structured site analysis guidance and inspiration.",
+      "Landscape architecture students, architecture and urban design students, portfolio applicants, beginner designers preparing studio boards, and self-taught design learners.",
     role:
-      "Product design, UX strategy, AI prompt architecture, prototype design, and user testing feedback synthesis.",
+      "Product strategy, UX flow, AI prompt structure, feature planning, information architecture, prototype direction, and case study writing.",
     tools: ["Next.js", "Tailwind CSS", "OpenAI API", "Figma", "Notion"],
     process: [
-      "Mapped student workflows for site analysis, precedent research, and visual concept development.",
-      "Built modular AI prompts for site frameworks, references, directions, and board generation.",
-      "Iterated on prototype flows with usability feedback from peers and instructors.",
+      "Defined the core product path from site input to board-ready output.",
+      "Structured prompts and outputs to support both analysis and visual direction.",
+      "Refined prototype screens around clear student workflows and critique preparation.",
     ],
     decisions: [
-      "Prioritized simple, scaffolded inputs to keep AI outputs relevant for design students.",
-      "Separated analysis, precedent, and presentation modules to reduce cognitive load.",
-      "Used a clean editorial layout to support both research and visual direction review.",
+      "Designed a beginner-first structure that scaffolds analysis and precedent review.",
+      "Connected inspirational references to explicit design logic rather than abstract mood boards.",
+      "Positioned AI as a studio assistant rather than a final designer.",
+      "Prioritized the board output as the activation moment for student confidence.",
     ],
     outcome:
-      "Created a prototype that helped learners move from open-ended research to tangible site strategy and visual presentation artifacts.",
+      "Delivered an independent product prototype that makes site analysis more structured, approachable, and decision-focused for design learners.",
     nextSteps:
-      "Test richer site-mapping interactions, expand AI training prompts for design criticism, and add peer review workflows.",
-    heroTagline: "AI-powered design education for site analysis.",
+      "Add a real precedent database, user-uploaded reference images, editable board layouts, export formats, critique mode, and paid tier experiments.",
+    heroTagline: "AI-enabled education for site analysis and design direction.",
     heroSummary:
-      "A platform for landscape architecture students to turn research into structured design frameworks, precedent references, and visual presentation boards.",
+      "A platform for landscape architecture and design students to turn a site, assignment, and style direction into structured research, precedents, and board logic.",
     path: "/work/siteatlas",
   },
   {

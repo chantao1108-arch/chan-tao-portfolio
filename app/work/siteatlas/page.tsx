@@ -7,6 +7,51 @@ import { projects } from "@/src/data/projects";
 
 const project = projects.find((item) => item.slug === "siteatlas");
 
+const targetUsers = [
+  "Landscape architecture students",
+  "Architecture and urban design students",
+  "Portfolio applicants",
+  "Beginner designers preparing studio boards",
+  "Self-taught design learners",
+];
+
+const roleItems = [
+  "Product strategy",
+  "UX flow",
+  "AI prompt structure",
+  "Feature planning",
+  "Information architecture",
+  "Prototype direction",
+  "Case study writing",
+];
+
+const productFeatures = [
+  "Project input: site, project type, design style, user level",
+  "AI-generated site analysis framework",
+  "Precedent cards",
+  "AI visual directions",
+  "Board Builder Lite",
+  "Export Center",
+  "Critique checklist",
+  "Advanced / Competition tier concept",
+];
+
+const uxSteps = [
+  "User enters location, project type, style, and skill level",
+  "SiteAtlas generates analysis categories",
+  "User reviews precedents and visual directions",
+  "User organizes findings into board sections",
+  "User exports or continues refining the presentation logic",
+];
+
+const placeholderCards = [
+  "Input form",
+  "AI analysis output",
+  "Precedent cards",
+  "Board Builder",
+  "Export Center",
+];
+
 export const metadata: Metadata = {
   title: "SiteAtlas — AI Design Education Tool",
   description: project?.heroSummary ?? "",
@@ -30,7 +75,7 @@ export default function SiteAtlasPage() {
         <section className="space-y-6 rounded-[2rem] border border-slate-300/75 bg-white p-10 shadow-sm">
           <p className="text-sm uppercase tracking-[0.35em] text-slate-600">{project.label}</p>
           <h1 className="text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">{project.title}</h1>
-          <p className="max-w-3xl text-lg leading-8 text-slate-700">{project.heroSummary}</p>
+          <p className="max-w-3xl text-lg leading-8 text-slate-700">{project.description}</p>
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="space-y-5 text-slate-700">
               <p>{project.overview}</p>
@@ -38,7 +83,11 @@ export default function SiteAtlasPage() {
             <div className="space-y-4 rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div>
                 <p className="text-sm uppercase tracking-[0.32em] text-slate-600">Role</p>
-                <p className="mt-2 text-slate-950">{project.role}</p>
+                <div className="mt-2 space-y-2 text-slate-950">
+                  {roleItems.map((item) => (
+                    <p key={item}>{item}</p>
+                  ))}
+                </div>
               </div>
               <div>
                 <p className="text-sm uppercase tracking-[0.32em] text-slate-600">Tools</p>
@@ -56,18 +105,40 @@ export default function SiteAtlasPage() {
 
         <section className="grid gap-16 py-16">
           <CaseStudySection title="Problem">
-            <p>{project.problem}</p>
+            <ul className="list-disc space-y-4 pl-5 text-slate-700">
+              <li>Site analysis is often ambiguous for beginner design students.</li>
+              <li>Students depend heavily on expensive tutoring, scattered references, and vague online inspiration.</li>
+              <li>AI tools can generate text, but they usually do not understand the design process or studio critique logic.</li>
+              <li>The challenge was to create a product flow that turns a vague design starting point into actionable design thinking.</li>
+            </ul>
           </CaseStudySection>
+
           <CaseStudySection title="Target users">
-            <p>{project.targetUsers}</p>
-          </CaseStudySection>
-          <CaseStudySection title="Process">
             <ul className="list-disc space-y-3 pl-5 text-slate-700">
-              {project.process.map((step) => (
-                <li key={step}>{step}</li>
+              {targetUsers.map((user) => (
+                <li key={user}>{user}</li>
               ))}
             </ul>
           </CaseStudySection>
+
+          <CaseStudySection title="Product features">
+            <ul className="grid gap-3 text-slate-700 sm:grid-cols-2">
+              {productFeatures.map((feature) => (
+                <li key={feature} className="rounded-3xl border border-slate-200 bg-slate-50 px-5 py-4">
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </CaseStudySection>
+
+          <CaseStudySection title="UX flow">
+            <div className="space-y-3 text-slate-700">
+              {uxSteps.map((step) => (
+                <p key={step}>• {step}</p>
+              ))}
+            </div>
+          </CaseStudySection>
+
           <CaseStudySection title="Key product decisions">
             <ul className="list-disc space-y-3 pl-5 text-slate-700">
               {project.decisions.map((decision) => (
@@ -75,15 +146,52 @@ export default function SiteAtlasPage() {
               ))}
             </ul>
           </CaseStudySection>
+
           <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10">
-            <p className="text-sm uppercase tracking-[0.35em] text-slate-600">Prototype / screens</p>
-            <div className="mt-6 h-72 rounded-[1.75rem] border border-dashed border-slate-300 bg-white" />
+            <p className="text-sm uppercase tracking-[0.35em] text-slate-600">Prototype placeholders</p>
+            <div className="mt-6 grid gap-6 sm:grid-cols-2">
+              {placeholderCards.map((label) => (
+                <div key={label} className="rounded-[1.75rem] border border-dashed border-slate-300 bg-white px-6 py-10 text-center text-slate-600 shadow-sm">
+                  {label}
+                </div>
+              ))}
+            </div>
           </div>
-          <CaseStudySection title="Outcome / what I learned">
-            <p>{project.outcome}</p>
+
+          <CaseStudySection title="Product thinking">
+            <p className="text-slate-700">
+              The activation moment is not when the user enters a prompt. The activation moment is when the user receives a board-ready structure that helps them move from confusion to design direction.
+            </p>
           </CaseStudySection>
+
+          <CaseStudySection title="Skills demonstrated">
+            <div className="grid gap-3 sm:grid-cols-2">
+              {[
+                "AI product thinking",
+                "UX information architecture",
+                "Product strategy",
+                "Design education knowledge",
+                "Prompt design",
+                "Web product prototyping",
+                "Feature prioritization",
+                "English product writing",
+              ].map((skill) => (
+                <div key={skill} className="rounded-3xl border border-slate-200 bg-white px-5 py-4 text-slate-700">
+                  {skill}
+                </div>
+              ))}
+            </div>
+          </CaseStudySection>
+
           <CaseStudySection title="Next steps">
-            <p>{project.nextSteps}</p>
+            <ul className="list-disc space-y-3 pl-5 text-slate-700">
+              <li>Add real precedent database</li>
+              <li>Add user-uploaded reference images</li>
+              <li>Add editable board layouts</li>
+              <li>Add export formats</li>
+              <li>Add critique mode</li>
+              <li>Add paid tier experiments</li>
+            </ul>
           </CaseStudySection>
         </section>
       </main>
