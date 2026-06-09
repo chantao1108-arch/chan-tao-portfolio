@@ -20,18 +20,18 @@ export default function WorkPage() {
     <div className="min-h-screen bg-[#f8f3ec] text-slate-950">
       <SiteHeader />
       <main className="mx-auto max-w-7xl px-6 pb-24 pt-10 lg:px-8">
-        <section className="space-y-6">
-          <div className="max-w-3xl">
-            <p className="text-sm uppercase tracking-[0.35em] text-slate-600">Work</p>
-            <h1 className="mt-4 text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">
+        <section className="space-y-6 rounded-[2rem] border border-slate-200 bg-white/80 p-8 shadow-sm">
+          <div className="max-w-3xl space-y-5">
+            <p className="text-[0.72rem] uppercase tracking-[0.35em] text-slate-500">Work</p>
+            <h1 className="text-[clamp(2.9rem,5vw,4.35rem)] font-semibold tracking-tight text-slate-950 leading-[1.02]">
               Projects that span product, UX, AI, storytelling, and analytics.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+            <p className="max-w-2xl text-lg leading-8 text-slate-700">
               Each case study explores a distinct product challenge, from AI education tools to narrative gameplay, content systems, and analytics-driven product decisions.
             </p>
           </div>
         </section>
-        <section className="mt-16 grid gap-8 xl:grid-cols-2">
+        <section className="mt-14 grid gap-8 xl:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
