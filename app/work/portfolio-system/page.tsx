@@ -1,109 +1,72 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CaseStudySection } from "@/src/components/CaseStudySection";
-import { LiftMockups } from "@/src/components/LiftMockups";
 import { SiteFooter } from "@/src/components/SiteFooter";
 import { SiteHeader } from "@/src/components/SiteHeader";
 import { projects } from "@/src/data/projects";
 
-const project = projects.find((item) => item.slug === "lift");
+const project = projects.find((item) => item.slug === "portfolio-system");
 
-const playerStates = [
+const systemLayers = [
   [
-    "Passenger",
-    "The player is still treated as a visitor. The building has not fully noticed them yet.",
+    "Identity",
+    "Define the professional frame: AI product prototypes, UX systems, workflow design, and structured case studies.",
   ],
   [
-    "Recognized",
-    "The environment begins to respond. Names, doors, boards, and audio cues start reflecting the player.",
+    "Information architecture",
+    "Organize scattered projects into a clear site structure with homepage, work overview, project pages, about, and contact.",
   ],
   [
-    "Integrated",
-    "The player becomes part of the building logic. Earlier actions begin to affect later floors.",
+    "Case-study format",
+    "Use consistent sections for overview, problem, role, process, decisions, outcome, and next steps.",
   ],
   [
-    "Resident",
-    "The player is no longer outside the system. They have been recorded, absorbed, or transformed.",
+    "Visual system",
+    "Keep the interface restrained, editorial, and flexible so the work can evolve without redesigning everything.",
   ],
 ] as const;
 
-const levelFramework = [
-  [
-    "Myth",
-    "Each floor begins with a human-life anxiety, social rule, unfinished memory, or surreal belief.",
-  ],
-  [
-    "Space",
-    "The floor translates that theme into a hallway, room, apartment board, ritual space, or impossible environment.",
-  ],
-  [
-    "Rule",
-    "The player must discover what action is allowed, forbidden, repeated, delayed, or punished.",
-  ],
-  [
-    "Trigger",
-    "A doorbell, board entry, light, object, sound, or timed action changes the floor state.",
-  ],
-  [
-    "Consequence",
-    "The floor reacts emotionally and mechanically, altering the player-state system.",
-  ],
-  [
-    "Exit",
-    "Progression depends on understanding the rule, not simply finding a key or reaching a door.",
-  ],
-] as const;
-
-const floorOneFlow = [
-  "The elevator opens into a quiet hallway with apartment doors and a resident board.",
-  "The board lists normal residents, but 102 is marked as Vacant.",
-  "Repeated interaction with 102 produces an anomaly rather than a normal response.",
-  "The player has to connect the board, doorbell behavior, and hallway changes.",
-  "Progression is unlocked by observation and rule discovery instead of direct instruction.",
+const contentDecisions = [
+  "Replace generic UX analyst language with a clearer AI product and UX analyst identity.",
+  "Use project cards as curated case-study entries instead of simple gallery blocks.",
+  "Frame unfinished prototypes honestly as evolving systems rather than pretending every project is final.",
+  "Connect landscape thinking, AI workflows, product systems, and web design through the idea of structured product experiences.",
 ];
 
-const designPrinciples = [
-  [
-    "Compact floors",
-    "Each floor should be small enough to build, test, and understand, but strange enough to feel memorable.",
-  ],
-  [
-    "Rules over jumpscares",
-    "Fear comes from discovering that the space has rules and the player has already violated some of them.",
-  ],
-  [
-    "Stateful horror",
-    "The game remembers the player. Earlier choices can change later floors, UI, names, sounds, and exits.",
-  ],
-  [
-    "Solo-friendly scope",
-    "The elevator structure keeps production modular so new floors can be added without rebuilding the full game.",
-  ],
-] as const;
+const siteSections = [
+  "Homepage positioning",
+  "Work overview",
+  "Project detail pages",
+  "Case-study writing",
+  "Project card system",
+  "About page",
+  "Resume / contact area",
+  "Future visual assets",
+];
 
 const skills = [
-  "Game UX",
-  "Interactive narrative design",
-  "Systems thinking",
-  "Level design",
-  "Mobile prototype planning",
-  "Unity workflow",
-  "Horror pacing",
-  "Bilingual narrative structure",
+  "Portfolio strategy",
+  "Personal brand positioning",
+  "Information architecture",
+  "Frontend editing",
+  "Case-study writing",
+  "Visual direction",
+  "Content hierarchy",
+  "Self-directed product thinking",
 ];
 
 export const metadata: Metadata = {
-  title: "LIFT — Narrative Horror Game Prototype",
+  title: "Portfolio System — Chan Tao",
   description: project?.heroSummary ?? "",
   openGraph: {
-    title: "LIFT — Narrative Horror Game Prototype",
+    title: "Portfolio System — Chan Tao",
     description: project?.heroSummary ?? "",
     type: "article",
-    url: "https://chan-tao-portfolio.vercel.app/work/lift",
+    url: "https://chan-tao-portfolio.vercel.app/work/portfolio-system",
   },
 };
 
-export default function LiftPage() {
+export default function PortfolioSystemPage() {
   if (!project) {
     notFound();
   }
@@ -197,22 +160,11 @@ export default function LiftPage() {
             </p>
           </CaseStudySection>
 
-          <CaseStudySection title="Core concept">
-            <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="max-w-4xl text-lg leading-8 text-slate-700">
-                The elevator is both the main interface and the narrative container. Each floor
-                is a rule-based chamber: the player observes, interacts, triggers anomalies, and
-                is gradually registered by the building. The goal is not to explain the horror,
-                but to let the player discover that the space has already started reading them.
-              </p>
-            </div>
-          </CaseStudySection>
-
-          <CaseStudySection title="Player state system">
+          <CaseStudySection title="System layers">
             <div className="grid gap-4 md:grid-cols-2">
-              {playerStates.map(([state, detail], index) => (
+              {systemLayers.map(([title, detail], index) => (
                 <div
-                  key={state}
+                  key={title}
                   className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm"
                 >
                   <div className="flex items-center gap-3">
@@ -223,59 +175,36 @@ export default function LiftPage() {
                   </div>
 
                   <h2 className="mt-4 text-lg font-semibold text-slate-950">
-                    {state}
-                  </h2>
-
-                  <p className="mt-2 leading-7 text-slate-700">{detail}</p>
-                </div>
-              ))}
-            </div>
-          </CaseStudySection>
-
-          <CaseStudySection title="Level design framework">
-            <div className="grid gap-3">
-              {levelFramework.map(([title, detail], index) => (
-                <div
-                  key={title}
-                  className="rounded-[1.35rem] border border-slate-200 bg-white px-5 py-4 shadow-sm"
-                >
-                  <p className="text-[0.65rem] uppercase tracking-[0.3em] text-slate-400">
-                    Layer {index + 1}
-                  </p>
-                  <h2 className="mt-2 text-base font-semibold text-slate-950">
                     {title}
                   </h2>
-                  <p className="mt-1 leading-7 text-slate-700">{detail}</p>
-                </div>
-              ))}
-            </div>
-          </CaseStudySection>
 
-          <CaseStudySection title="Example prototype floor — Floor 01">
-            <div className="space-y-3">
-              {floorOneFlow.map((step, index) => (
-                <div
-                  key={step}
-                  className="flex gap-4 rounded-[1.25rem] border border-slate-200 bg-white px-5 py-4 shadow-sm"
-                >
-                  <span className="text-[0.68rem] uppercase tracking-[0.28em] text-slate-400">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <p className="text-slate-700">{step}</p>
-                </div>
-              ))}
-            </div>
-          </CaseStudySection>
-
-          <CaseStudySection title="Design principles">
-            <div className="grid gap-4 md:grid-cols-2">
-              {designPrinciples.map(([title, detail]) => (
-                <div
-                  key={title}
-                  className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm"
-                >
-                  <h2 className="text-lg font-semibold text-slate-950">{title}</h2>
                   <p className="mt-2 leading-7 text-slate-700">{detail}</p>
+                </div>
+              ))}
+            </div>
+          </CaseStudySection>
+
+          <CaseStudySection title="Content decisions">
+            <div className="grid gap-3">
+              {contentDecisions.map((decision) => (
+                <div
+                  key={decision}
+                  className="rounded-[1.35rem] border border-slate-200 bg-white px-5 py-4 leading-7 text-slate-700 shadow-sm"
+                >
+                  {decision}
+                </div>
+              ))}
+            </div>
+          </CaseStudySection>
+
+          <CaseStudySection title="Site sections">
+            <div className="grid gap-3 sm:grid-cols-2">
+              {siteSections.map((section) => (
+                <div
+                  key={section}
+                  className="rounded-[1.35rem] border border-slate-200 bg-white px-5 py-4 text-slate-700 shadow-sm"
+                >
+                  {section}
                 </div>
               ))}
             </div>
@@ -309,8 +238,6 @@ export default function LiftPage() {
               ))}
             </div>
           </CaseStudySection>
-
-          <LiftMockups />
 
           <CaseStudySection title="Outcome">
             <p className="max-w-4xl text-lg leading-8 text-slate-700">

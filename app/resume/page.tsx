@@ -80,7 +80,7 @@ export default function ResumePage() {
           </div>
 
           <div className="space-y-5 rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-sm">
-            <h3 className="text-[0.7rem] uppercase tracking-[0.34em] text-slate-500">Technical &amp; Creative</h3>
+            <h3 className="text-[0.7rem] uppercase tracking-[0.34em] text-slate-500">Technical &amp; systems</h3>
             <div className="space-y-4 text-slate-700">
               <div>
                 <h4 className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-500">Technical</h4>
@@ -94,7 +94,7 @@ export default function ResumePage() {
               </div>
 
               <div>
-                <h4 className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-500">Creative systems</h4>
+                <h4 className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-500">Workflow &amp; systems</h4>
                 <ul className="mt-2 grid gap-2 sm:grid-cols-2">
                   <li>Visual storytelling</li>
                   <li>Narrative systems</li>

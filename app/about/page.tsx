@@ -26,18 +26,18 @@ export default function AboutPage() {
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-slate-600">About</p>
               <h1 className="mt-4 text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">
-                I help teams shape AI-enabled products and UX systems with a grounded, editorial approach.
+                I design AI product and UX systems that help teams turn unclear ideas into structured experiences.
               </h1>
             </div>
             <div className="space-y-8 text-slate-700">
               <p>
-                I am an AI Product & UX Analyst with a background in landscape architecture and design thinking. I combine spatial reasoning, visual storytelling, and systems thinking to make AI experiences that are clear, usable, and teachable.
+                I am an AI Product &amp; UX Analyst with a background in landscape architecture and design thinking. I combine visual storytelling, structured thinking, and systems logic to make AI experiences that are clear, usable, and teachable.
               </p>
               <p>
-                I build independent prototypes and workflows — including projects like SiteAtlas and LIFT — that help learners and creators move from ambiguous prompts to structured outputs and presentation-ready artifacts.
+                I build independent prototypes and workflows — including projects like SiteAtlas and LIFT — that help users move from ambiguous prompts to structured outputs, product logic, and presentation-ready artifacts.
               </p>
               <p>
-                My strength is turning abstract ideas into systems, flows, and product concepts that teams can test and iterate on. I focus on early-stage product work: prototyping, UX research, and analytics-informed design.
+                My strength is turning abstract ideas into systems, flows, and product concepts that teams can test and iterate on. I focus on early-stage product work: prototyping, UX research, technical business analysis, product operations, and analytics-informed design.
               </p>
             </div>
           </div>
