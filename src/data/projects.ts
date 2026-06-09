@@ -131,40 +131,38 @@ export const projects: Project[] = [
     path: "/work/ai-content-pipeline",
   },
   {
-    slug: "portfolio-system",
-    title: "Portfolio System",
-    label: "Personal Brand & Web System",
+    slug: "product-analytics",
+    title: "Product Analytics Case Study",
+    label: "Activation & Retention",
     description:
-      "A self-directed portfolio website that turns scattered projects into a coherent public-facing system across AI product prototypes, UX systems, workflow design, and analytics case studies.",
-    tags: ["Portfolio Design", "Personal Brand", "Frontend", "Case Study System", "Creative Direction"],
+      "A simulated product analytics case study exploring activation, retention, and conversion for an AI design education tool.",
+    tags: ["Product Analytics", "Funnel Analysis", "Retention", "SQL"],
     overview:
-      "This portfolio is not only a container for finished work. It is a design system for clarifying my direction across AI tools, landscape thinking, narrative games, and visual experiments. The goal was to turn many different interests into one coherent professional identity.",
+      "This case study uses a simulated dataset for an AI design education product similar to SiteAtlas. The goal is to demonstrate how product analytics can translate user behavior into product decisions.",
     problem:
-      "My work spans multiple categories: AI product ideas, landscape design education, horror game systems, visual experiments, and content workflows. Without a clear structure, these projects can look unrelated. The challenge was to design a portfolio that presents them as one connected practice instead of a random collection of experiments.",
+      "AI tools can generate outputs, but not every output creates user value. Product teams need to know where users drop off and which behaviors predict retention. For an AI design education tool, the key question is whether users reach a board-ready structure. The challenge was to define meaningful activation and retention signals for a new product concept.",
     targetUsers:
-      "Hiring managers, collaborators, AI product teams, design studios, product operations teams, and people evaluating my ability to structure ambiguous ideas.",
+      "Product analysts, UX researchers, product managers, and designers interested in analytics-driven product decisions.",
     role:
-      "Information architecture, writing, visual direction, project positioning, frontend editing, content strategy, and case study system design.",
-    tools: ["Next.js", "Tailwind CSS", "Vercel", "GitHub", "VS Code"],
+      "Analytic strategy, funnel definition, simulated data design, SQL query examples, metric synthesis, and product recommendation writing.",
+    tools: ["SQL", "Looker", "Figma", "Notion", "Excel"],
     process: [
-      "Defined the core identity around AI product prototypes, UX systems, workflow design, and narrative prototypes.",
-      "Organized projects into clear case-study categories with consistent labels, summaries, roles, processes, decisions, outcomes, and next steps.",
-      "Refined the homepage, work overview, project cards, and detail-page structure to feel more curated and less template-like.",
-      "Connected the portfolio language to the actual projects I am building rather than forcing the work into a generic designer format.",
+      "Defined a hypothetical funnel and key activation signals.",
+      "Created a simulated dataset to demonstrate analysis workflows.",
+      "Produced prioritized product recommendations based on simulated insights.",
     ],
     decisions: [
-      "Used a restrained editorial visual style to keep the site professional and flexible.",
-      "Positioned the portfolio around systems, space, story, and AI-assisted production.",
-      "Made each project card read like a curated case study instead of a simple gallery item.",
-      "Kept the structure expandable so new projects can be added without redesigning the entire site.",
+      "Define clear activation and retention events early in the product lifecycle.",
+      "Focus analysis on behaviors that lead to board-ready outputs rather than generation volume.",
+      "Use exports and saved boards as stronger value signals than generation alone.",
     ],
     outcome:
-      "Built a public-facing portfolio system that gives my scattered work a clearer professional frame and can continue evolving as new projects become more complete.",
+      "A clear, reproducible analytics narrative demonstrating how teams can measure and act on activation and retention signals for an AI design education product.",
     nextSteps:
-      "Add stronger project visuals, refine mobile presentation, create a downloadable resume PDF, add live demo links, and continue replacing placeholder material with real project assets.",
-    heroTagline: "A portfolio system for turning scattered work into a clear public identity.",
+      "Build a real event-tracking plan, implement the analytics events, create dashboards, and run onboarding experiments.",
+    heroTagline: "Activation and retention analysis for an AI design learning experience.",
     heroSummary:
-      "A self-directed web system that organizes AI product prototypes, UX systems, workflow design, and analytics case studies into a coherent portfolio.",
-    path: "/work/portfolio-system",
+      "A simulated analytics case study showing how funnel, retention, and conversion metrics inform product decisions for an AI design tool.",
+    path: "/work/product-analytics",
   },
 ];
