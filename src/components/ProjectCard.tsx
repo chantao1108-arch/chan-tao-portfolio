@@ -184,20 +184,29 @@ function ProjectPreview({ project }: { project: Project }) {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="group">
-      <Link href={project.path} className="block rounded-4xl border border-slate-300/70 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+      <Link
+        href={project.path}
+        className="block rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_16px_40px_rgba(16,21,31,0.08)]"
+      >
         <ProjectPreview project={project} />
         <div className="mt-6 space-y-4">
-          <div className="text-xs uppercase tracking-[0.26em] text-slate-600">{project.label}</div>
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-950">{project.title}</h2>
+          <div className="flex items-center justify-between gap-4 text-xs uppercase tracking-[0.26em] text-slate-600">
+            <span>{project.label}</span>
+            <span className="h-px flex-1 bg-slate-200" />
+          </div>
+          <h2 className="text-[1.55rem] font-semibold tracking-tight text-slate-950">{project.title}</h2>
           <p className="text-sm leading-7 text-slate-700">{project.description}</p>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
-              <span key={tag} className="rounded-full border border-slate-300/80 px-3 py-1 text-xs uppercase tracking-[0.18em] text-slate-600">
+              <span key={tag} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-[0.66rem] uppercase tracking-[0.18em] text-slate-600">
                 {tag}
               </span>
             ))}
           </div>
-          <div className="mt-6 text-sm font-semibold text-slate-900">View case study →</div>
+          <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm group-hover:border-slate-300 group-hover:bg-white">
+            View case study
+            <span aria-hidden="true">→</span>
+          </div>
         </div>
       </Link>
     </article>

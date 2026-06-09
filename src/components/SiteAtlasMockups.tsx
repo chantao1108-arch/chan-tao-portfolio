@@ -76,7 +76,7 @@ export function SiteAtlasMockups() {
             ].map((item) => (
               <div key={item} className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
                 <p className="text-sm font-semibold text-slate-950">{item}</p>
-                <p className="mt-2 text-sm text-slate-600">Lorem ipsum placeholder description for product structure.</p>
+                <p className="mt-2 text-sm text-slate-600">Short analysis note describing site access, circulation, and public edge conditions.</p>
               </div>
             ))}
           </div>
