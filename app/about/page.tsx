@@ -60,7 +60,7 @@ export default function AboutPage() {
                   "Product strategy",
                   "UX flows & IA",
                   "Figma planning",
-                  "Next.js / Vercel deployment deployment",
+                  "Next.js / Vercel deployment deployment deployment deployment",
                   "OpenAI API prototyping",
                   "SQL funnel analysis",
                   "Product analytics",
