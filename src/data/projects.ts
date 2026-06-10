@@ -24,7 +24,7 @@ export const projects: Project[] = [
     title: "SiteAtlas",
     label: "AI Design Education Tool",
     description:
-      "An AI-assisted design education platform that helps landscape architecture and design students turn a site, project type, and visual direction into structured analysis, precedent logic, AI visual guidance, and presentation-ready board thinking.",
+      "An AI product prototype for design education that helps landscape architecture and design students move from site confusion to structured analysis, precedent logic, and board-ready presentation workflows.",
     tags: ["AI Product", "Design Education", "Landscape Architecture", "UX System", "Web Prototype"],
     overview:
       "SiteAtlas is a self-directed AI product prototype built from my landscape architecture background. It addresses the moment when design students know their site and assignment, but do not know how to begin analysis, organize references, or translate research into a clear design board.",
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     title: "LIFT",
     label: "Narrative Horror Game Prototype",
     description:
-      "A mobile narrative horror prototype built around surreal elevator floors, rule-based puzzles, modular level design, and player-state progression.",
+      "A narrative horror game prototype exploring modular elevator floors, rule discovery, player-state progression, and interaction-driven horror systems.",
     tags: ["Game Design", "Narrative Systems", "Unity", "Mobile Prototype", "Horror UX"],
     overview:
       "LIFT is an independent mobile game concept about an elevator that turns life anxieties, unfinished memories, and social rules into surreal floors. Each floor works as a compact narrative puzzle with its own spatial logic, interaction rule, and emotional consequence.",
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     title: "AI Content Pipeline",
     label: "Horror Video Workflow",
     description:
-      "An AI-assisted production workflow that turns a short horror concept into a repeatable system for scripts, shot lists, visual prompts, generated assets, editing plans, and performance review.",
+      "A repeatable AI workflow system for turning short horror concepts into hooks, scripts, shot lists, visual prompts, editing checklists, and performance review loops.",
     tags: ["AI Workflow", "Content System", "Horror Storytelling", "Visual Direction", "Video Production"],
     overview:
       "This project explores how a solo creator can use AI tools to produce short-form horror videos more consistently without losing control over story, pacing, atmosphere, and visual identity.",
@@ -135,7 +135,7 @@ export const projects: Project[] = [
     title: "Product Analytics Case Study",
     label: "Activation & Retention",
     description:
-      "A simulated product analytics case study exploring activation, retention, and conversion for an AI design education tool.",
+      "A simulated analytics case study defining activation, retention, funnel events, SQL examples, and product recommendations for an AI design education tool.",
     tags: ["Product Analytics", "Funnel Analysis", "Retention", "SQL"],
     overview:
       "This case study uses a simulated dataset for an AI design education product similar to SiteAtlas. The goal is to demonstrate how product analytics can translate user behavior into product decisions.",

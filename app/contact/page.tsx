@@ -21,10 +21,13 @@ export default function ContactPage() {
         <section className="rounded-[2rem] border border-slate-300/70 bg-white p-12 shadow-sm">
           <p className="text-sm uppercase tracking-[0.35em] text-slate-600">Contact</p>
           <h1 className="mt-6 text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">
-            Let’s talk about AI product strategy, UX systems, and editorial design.
+            Interested in AI product, UX, workflow systems, or product analytics collaboration?
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
-            If you want to collaborate on product prototypes, AI workflows, or analytics-informed experiences, send a note and I’ll reply with next steps.
+            Contact:{" "}
+            <a href="mailto:chantao1108@gmail.com" className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-500">
+              chantao1108@gmail.com
+            </a>
           </p>
           <div className="mt-10 rounded-3xl border border-slate-200 bg-slate-50 p-8">
             <p className="text-base font-medium text-slate-950">Email</p>

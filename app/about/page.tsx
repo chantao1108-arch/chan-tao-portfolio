@@ -6,11 +6,11 @@ import { SkillsGrid } from "@/src/components/SkillsGrid";
 export const metadata: Metadata = {
   title: "About — Chan Tao",
   description:
-    "About Chan Tao, an AI product and UX analyst with a background in landscape architecture, visual storytelling, and interactive systems.",
+    "About Chan Tao, an AI Product & UX Analyst with a background in landscape architecture, visual systems, and structured product thinking.",
   openGraph: {
     title: "About — Chan Tao",
     description:
-      "About Chan Tao, an AI product and UX analyst with a background in landscape architecture, visual storytelling, and interactive systems.",
+      "About Chan Tao, an AI Product & UX Analyst with a background in landscape architecture, visual systems, and structured product thinking.",
     type: "website",
     url: "https://chan-tao-portfolio.vercel.app/about",
   },
@@ -31,13 +31,13 @@ export default function AboutPage() {
             </div>
             <div className="space-y-8 text-slate-700">
               <p>
-                I am an AI Product &amp; UX Analyst with a background in landscape architecture and design thinking. I combine visual storytelling, structured thinking, and systems logic to make AI experiences that are clear, usable, and teachable.
+                I&apos;m an AI Product &amp; UX Analyst focused on turning ambiguous ideas into structured product flows, AI-assisted workflows, and data-informed case studies.
               </p>
               <p>
-                I build independent prototypes and workflows — including projects like SiteAtlas and LIFT — that help users move from ambiguous prompts to structured outputs, product logic, and presentation-ready artifacts.
+                My background in landscape architecture and visual systems gives me a strong foundation in spatial thinking, information structure, and presentation logic. I use that foundation to design early-stage product concepts, UX flows, workflow systems, and prototype case studies.
               </p>
               <p>
-                My strength is turning abstract ideas into systems, flows, and product concepts that teams can test and iterate on. I focus on early-stage product work: prototyping, UX research, technical business analysis, product operations, and analytics-informed design.
+                I&apos;m currently focused on roles related to AI product analysis, technical business analysis, product operations, UX/product design, and AI workflow systems.
               </p>
             </div>
           </div>
@@ -58,15 +58,14 @@ export default function AboutPage() {
               <div className="mt-4">
                 <SkillsGrid skills={[
                   "Product strategy",
-                  "UX flows",
-                  "Figma / interface planning",
-                  "Next.js / Vercel prototyping",
-                  "OpenAI API concepts",
-                  "SQL basics",
+                  "UX flows & IA",
+                  "Figma planning",
+                  "Next.js / Vercel deployment",
+                  "OpenAI API prototyping",
+                  "SQL for funnel analysis",
                   "Product analytics",
                   "Unity prototype planning",
-                  "AI content workflows",
-                  "English product writing",
+                  "AI workflow systems",
                 ]} />
               </div>
             </div>

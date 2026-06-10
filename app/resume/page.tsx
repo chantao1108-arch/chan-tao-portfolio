@@ -71,7 +71,7 @@ export default function ResumePage() {
                 <ul className="mt-2 grid gap-2 sm:grid-cols-2">
                   <li>AI-assisted prototyping</li>
                   <li>Prompt systems</li>
-                  <li>OpenAI API concepts</li>
+                  <li>OpenAI API concepts for AI product prototyping</li>
                   <li>AI content workflows</li>
                   <li>Creative production pipelines</li>
                 </ul>
@@ -85,21 +85,21 @@ export default function ResumePage() {
               <div>
                 <h4 className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-500">Technical</h4>
                 <ul className="mt-2 grid gap-2 sm:grid-cols-2">
-                  <li>Next.js / Vercel prototyping</li>
+                  <li>Next.js / Vercel for web prototype deployment</li>
                   <li>GitHub workflow</li>
-                  <li>SQL basics</li>
+                  <li>SQL basics for funnel and retention analysis</li>
                   <li>Product analytics concepts</li>
-                  <li>Unity prototype planning</li>
+                  <li>Unity prototype planning for interactive systems</li>
                 </ul>
               </div>
 
               <div>
                 <h4 className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-500">Workflow &amp; systems</h4>
                 <ul className="mt-2 grid gap-2 sm:grid-cols-2">
-                  <li>Visual storytelling</li>
-                  <li>Narrative systems</li>
-                  <li>Game UX</li>
-                  <li>Horror pacing</li>
+                  <li>Presentation logic</li>
+                  <li>Structured case studies</li>
+                  <li>Product operations thinking</li>
+                  <li>Workflow systems</li>
                   <li>Bilingual content structure</li>
                 </ul>
               </div>
@@ -144,13 +144,18 @@ export default function ResumePage() {
         <section className="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-sm text-slate-700">
             <h3 className="text-[0.7rem] uppercase tracking-[0.34em] text-slate-500">Tools</h3>
-            <p className="mt-4 leading-8">Next.js, Vercel, GitHub, OpenAI API concepts, Figma planning, SQL basics, Unity planning, AI image/video tools, English product writing.</p>
+            <p className="mt-4 leading-8">Next.js / Vercel for web prototype deployment, GitHub workflow, OpenAI API concepts for AI product prototyping, Figma planning, SQL basics for funnel and retention analysis, Unity prototype planning for interactive systems, AI image/video tools, English product writing.</p>
           </div>
 
           <div className="rounded-[1.75rem] border border-slate-200 bg-[#f8f4ee] p-7 shadow-sm text-slate-700">
             <h3 className="text-[0.7rem] uppercase tracking-[0.34em] text-slate-500">CTA</h3>
-            <p className="mt-4">Downloadable PDF resume coming soon.</p>
-            <p className="mt-2 font-medium text-slate-950">Contact: chantao1108@gmail.com</p>
+            <p className="mt-4">Interested in AI product, UX, workflow systems, or product analytics collaboration?</p>
+            <p className="mt-2 font-medium text-slate-950">
+              Contact:{" "}
+              <a href="mailto:chantao1108@gmail.com" className="underline decoration-slate-300 underline-offset-4 hover:decoration-slate-500">
+                chantao1108@gmail.com
+              </a>
+            </p>
           </div>
         </section>
       </main>

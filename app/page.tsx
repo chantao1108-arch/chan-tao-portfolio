@@ -7,11 +7,11 @@ import { projects } from "@/src/data/projects";
 export const metadata: Metadata = {
   title: "Chan Tao — AI Product & UX Analyst",
   description:
-    "Chan Tao is an AI Product & UX Analyst focused on product prototypes, UX systems, workflow design, and product analytics.",
+    "Portfolio of Chan Tao, an AI Product & UX Analyst working across AI product prototypes, UX systems, product analytics, and AI workflow systems.",
   openGraph: {
     title: "Chan Tao — AI Product & UX Analyst",
     description:
-      "AI Product & UX Analyst portfolio focused on prototypes, UX systems, workflow design, and product analytics.",
+      "Portfolio of Chan Tao, an AI Product & UX Analyst working across AI product prototypes, UX systems, product analytics, and AI workflow systems.",
     type: "website",
     url: "https://chan-tao-portfolio.vercel.app",
     siteName: "Chan Tao Portfolio",
@@ -87,7 +87,7 @@ export default function Home() {
               </h1>
 
               <p className="max-w-2xl text-base leading-8 text-slate-700 sm:text-lg">
-                I design AI-powered product prototypes, UX flows, workflow systems, and product analytics case studies — with a focus on early-stage ideas that need clearer structure before they can scale.
+                I design AI-powered product prototypes, UX flows, workflow systems, and product analytics case studies for early-stage ideas that need clearer structure before they can scale.
               </p>
             </div>
 
@@ -125,7 +125,7 @@ export default function Home() {
                   Working mode
                 </p>
                 <p className="mt-2 text-sm leading-7">
-                  I use design thinking, AI tools, and lightweight code to move projects from rough concepts to visible working systems.
+                  My work focuses on turning unclear product ideas into structured flows, prototype systems, and decision frameworks. I use AI tools, web prototyping, and product analytics thinking to make early concepts easier to test, explain, and build.
                 </p>
               </div>
 
@@ -219,7 +219,7 @@ export default function Home() {
             </div>
 
             <p className="max-w-xl text-sm leading-7 text-slate-700">
-              These projects connect AI workflows, interaction design, information architecture, and product analytics into practical prototypes and structured case studies.
+              These projects are framed as structured product and UX case studies, with a focus on AI product prototypes, workflow systems, and product analytics.
             </p>
           </div>
 

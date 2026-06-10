@@ -173,7 +173,7 @@ FROM events; </pre>
                 "Funnel analysis",
                 "Activation definition",
                 "Retention thinking",
-                "SQL basics",
+                "SQL basics for funnel and retention analysis",
                 "Product decision-making",
                 "Metric design",
                 "Data storytelling",

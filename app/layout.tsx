@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Chan Tao — AI Product & UX Analyst",
   description:
-    "AI product and UX analyst portfolio featuring editorial AI prototypes, narrative systems, and analytics case studies.",
+    "Portfolio of Chan Tao, an AI Product & UX Analyst working across AI product prototypes, UX systems, product analytics, and AI workflow systems.",
   openGraph: {
     title: "Chan Tao — AI Product & UX Analyst",
     description:
-      "AI product and UX analyst portfolio featuring editorial AI prototypes, narrative systems, and analytics case studies.",
+      "Portfolio of Chan Tao, an AI Product & UX Analyst working across AI product prototypes, UX systems, product analytics, and AI workflow systems.",
     type: "website",
     url: "https://chan-tao-portfolio.vercel.app",
     siteName: "Chan Tao Portfolio",

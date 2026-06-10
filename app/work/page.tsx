@@ -7,11 +7,11 @@ import { projects } from "@/src/data/projects";
 export const metadata: Metadata = {
   title: "Work — Chan Tao",
   description:
-    "Selected work by Chan Tao across AI product prototypes, UX systems, workflow design, and product analytics.",
+    "Selected work by Chan Tao across AI product prototypes, UX systems, workflow design, and product analytics case studies.",
   openGraph: {
     title: "Work — Chan Tao",
     description:
-      "Selected work across AI product prototypes, UX systems, workflow design, and product analytics.",
+      "Selected work across AI product prototypes, UX systems, workflow design, and product analytics case studies.",
     type: "website",
     url: "https://chan-tao-portfolio.vercel.app/work",
   },
@@ -56,11 +56,11 @@ export default function WorkPage() {
             </p>
 
             <h1 className="text-[clamp(2.8rem,5vw,4.4rem)] font-semibold leading-[1.02] tracking-tight text-slate-950">
-              Selected systems, prototypes, and product-UX case studies.
+              Selected product and UX case studies.
             </h1>
 
             <p className="max-w-2xl text-lg leading-8 text-slate-700">
-              These projects connect product thinking, UX logic, workflow design, and AI systems. They are built as evolving case studies: each one documents a problem, a system, a process, and a next step.
+              These projects connect product thinking, UX logic, workflow design, and AI systems. Each one documents a problem, a system, a process, and a next step.
             </p>
 
             <div className="flex flex-wrap gap-2 border-t border-slate-200 pt-5 text-[0.68rem] uppercase tracking-[0.26em] text-slate-500">
