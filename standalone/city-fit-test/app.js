@@ -1,0 +1,64 @@
+const QUESTIONS=window.CITYFIT_QUESTIONS;
+const PROFILES=window.CITYFIT_PROFILES;
+const DIMNAMES=window.CITYFIT_DIMNAMES;
+let idx=0, answers=[];
+
+function startTest(){document.getElementById("cover").classList.add("hidden");document.getElementById("quiz").classList.remove("hidden");render();}
+function render(){
+ const q=QUESTIONS[idx];
+ document.getElementById("qnum").textContent=`${idx+1} / ${QUESTIONS.length}`;
+ document.getElementById("qtext").textContent=q.q;
+ document.getElementById("bar").style.width=`${idx/QUESTIONS.length*100}%`;
+ const box=document.getElementById("options"); box.innerHTML="";
+ q.opts.forEach((o,i)=>{const b=document.createElement("button");b.className="opt";b.textContent=o[0];b.onclick=()=>choose(i);box.appendChild(b);});
+ document.getElementById("back").classList.toggle("hidden",idx===0);
+}
+function choose(i){answers[idx]=i;if(idx<QUESTIONS.length-1){idx++;render();window.scrollTo({top:0,behavior:"smooth"})}else showResult();}
+function goBack(){if(idx>0){idx--;render();}}
+function scores(){
+ let raw={G:0,S:0,D:0,A:0,C:0,M:0,W:0}, cnt={G:0,S:0,D:0,A:0,C:0,M:0,W:0};
+ QUESTIONS.forEach((q,i)=>{const a=answers[i]; if(a===undefined)return; raw[q.dim]+=q.opts[a][1]; cnt[q.dim]++;});
+ const out={}; Object.keys(raw).forEach(k=>out[k]=Math.round((raw[k]/(cnt[k]*3))*100)); return out;
+}
+function distance(s,c){let sum=0;Object.keys(c).forEach(k=>{sum+=Math.pow(s[k]-c[k],2)});return Math.sqrt(sum);}
+function showResult(){
+ var s=scores(); var arr=[];
+ for(var key in PROFILES){ if(Object.prototype.hasOwnProperty.call(PROFILES,key)){ var pp=PROFILES[key]; arr.push({k:key,p:pp,d:distance(s,pp.centroid)}); } }
+ arr.sort(function(a,b){return a.d-b.d;});
+ var first=arr[0].p, second=arr[1].p;
+ document.getElementById("quiz").classList.add("hidden"); document.getElementById("result").classList.remove("hidden");
+ document.getElementById("rname").textContent=first.name; document.getElementById("rtag").textContent=first.tag;
+ document.getElementById("rcities").textContent=first.cities; document.getElementById("rbody").textContent=first.body;
+ document.getElementById("rdark").textContent=first.dark; document.getElementById("rfit").textContent=first.fit;
+ document.getElementById("rshare").textContent="“"+first.share+"”";
+ document.getElementById("second").innerHTML=`你的第二城市原型是 <b>${second.name}</b>（${second.cities}）。如果你在主结果与副结果之间反复横跳，很正常：人本来就不是单一标签。`;
+ const dims=document.getElementById("dims"); dims.innerHTML="";
+ Object.keys(s).forEach(k=>{dims.innerHTML+=`<div class="dim"><div class="dimhead"><span>${DIMNAMES[k]}</span><span>${s[k]}</span></div><div class="track"><div class="fill" style="width:${s[k]}%"></div></div></div>`});
+ window.__last={first,second,s}; window.scrollTo({top:0,behavior:"smooth"});
+}
+function copyResult(){
+ const x=window.__last; if(!x)return;
+ const t=`我的城市原型：${x.first.name}\n代表城市：${x.first.cities}\n${x.first.share}\n副匹配：${x.second.name}`;
+ if(navigator.clipboard && navigator.clipboard.writeText){
+   navigator.clipboard.writeText(t).then(function(){alert("结果文案已复制");}).catch(function(){window.prompt("复制下面的结果文案：",t);});
+ }else{
+   window.prompt("复制下面的结果文案：",t);
+ }
+}
+function restart(){idx=0;answers=[];document.getElementById("result").classList.add("hidden");document.getElementById("cover").classList.remove("hidden");window.scrollTo(0,0);}
+
+function bindStaticButtons(){
+  var startBtn=document.getElementById("startBtn");
+  var backBtn=document.getElementById("back");
+  var copyBtn=document.getElementById("copyBtn");
+  var restartBtn=document.getElementById("restartBtn");
+  if(startBtn) startBtn.addEventListener("click", startTest);
+  if(backBtn) backBtn.addEventListener("click", goBack);
+  if(copyBtn) copyBtn.addEventListener("click", copyResult);
+  if(restartBtn) restartBtn.addEventListener("click", restart);
+}
+if(document.readyState==="loading"){
+  document.addEventListener("DOMContentLoaded", bindStaticButtons);
+}else{
+  bindStaticButtons();
+}
